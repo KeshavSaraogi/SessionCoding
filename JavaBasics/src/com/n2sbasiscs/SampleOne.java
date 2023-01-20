@@ -7,6 +7,7 @@ public class SampleOne {
 		
 		SampleOne obj = new SampleOne();
 		System.out.println(obj.add(1, 2));
+		System.out.println(obj.subtract(5,4));
 	}
 	
 	public int add(int x, int y) {
