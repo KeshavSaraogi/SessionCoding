@@ -1,6 +1,8 @@
 package com.n2sbasiscs;
 
 public class SampleOne {
+	
+	public int age = 12;
 
 	public static void main(String[] args) {
 		System.out.println("Hello World One");
@@ -17,7 +19,11 @@ public class SampleOne {
 	public static int subtract(int x, int y) {
 		return x - y;
 	}
-	
+
+}
+
+
+class Example {
 	public int multiply(int x, int y) {
 		return x * y;
 	}
@@ -30,5 +36,4 @@ public class SampleOne {
 			return x / y;
 		}
 	}
-
 }
