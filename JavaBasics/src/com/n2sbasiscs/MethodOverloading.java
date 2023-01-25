@@ -26,5 +26,4 @@ public class MethodOverloading {
 	public int add(int x) {
 		return x + x;
 	}
-
 }

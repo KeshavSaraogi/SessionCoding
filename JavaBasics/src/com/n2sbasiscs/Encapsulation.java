@@ -1,14 +1,15 @@
 package com.n2sbasiscs;
 
-public class Encapsulation {
+class Encapsulation {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Sample s = new Sample();
 		s.display1();
-		//Innersample is = new Innersample();
 		
+		//Innersample is = new Innersample();
 		System.out.println(s.x);
+		//System.out.println(s.y);
 	}
 
 }
@@ -17,8 +18,6 @@ class Sample{
 	
 	public int x = 5;
 	private int y = 10;
-	
-	//System.out.println(y);
 	
 	InnerSample is = new InnerSample();
 	
@@ -36,7 +35,5 @@ class Sample{
 		public void display2() {
 			System.out.println("Display 3");
 		}
-	}
-	
-	
+	}	
 }
