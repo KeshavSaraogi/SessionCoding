@@ -1,6 +1,7 @@
 package Collection;
 
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 public class HashEquals {
@@ -30,7 +31,23 @@ public class HashEquals {
 		System.out.println(s);
 
 	}
-
 	
+	//why we need to override the hashcode methods - very important 
 
+	@Override
+	public int hashCode() {
+		return Objects.hash(id);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		HashEquals other = (HashEquals) obj;
+		return Objects.equals(id, other.id);
+	}
 }
