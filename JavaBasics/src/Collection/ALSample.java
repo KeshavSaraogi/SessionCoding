@@ -6,6 +6,10 @@ import java.util.Iterator;
 public class ALSample {
 
 	public static void main(String[] args) {
+		
+		JavaBean jb = new JavaBean("Keshav", 23);
+		System.out.println(jb.getAge() + " " + jb.getName());
+		
 		ArrayList<String> al = new ArrayList<String>();
 		
 		al.add("Keshav");

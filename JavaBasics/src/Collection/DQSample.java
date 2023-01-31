@@ -9,7 +9,11 @@ public class DQSample {
 	//Array Deque is a class derived from deque interface
 	public static void main(String[] args) {
 
-		Deque<String> dq = new ArrayDeque<String>();
+		//advantage over the normal implementation; 
+		//already provided with the overriding method;
+		//can access both deque and arraydequqe methods instead of only arraydeque methods;
+		//left - interface right - class;
+		Deque<String> dq = new ArrayDeque<String>(); 
 		dq.offer("Vijay");
 		dq.offer("Sai");
 		dq.offer("Keshav");
